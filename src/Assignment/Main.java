@@ -1,6 +1,7 @@
 package Assignment;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class Main {
     static int num;
@@ -21,9 +22,12 @@ public class Main {
 
         };
 
-        List<Integer> list = Arrays.asList(1, 2, 13, 3, 4, 5, 45, 34, 3, 11);
-        for (int j = 0; j < list.size(); j++) {
-            num = list.get(j);
+        Random rand = new Random();
+
+        //List<Integer> list = Arrays.asList(1, 2, 13, 3, 4, 5, 45, 34, 3, 11);
+        for (int j = 0; j <5; j++) {
+            int num = rand.nextInt(100);
+
             obj.check(num);
         }
 
